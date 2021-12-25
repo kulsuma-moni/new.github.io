@@ -1,0 +1,130 @@
+@media (min-width: 320px) and (max-width: 575px) {
+  .menu-shrink {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    position: absolute;
+    z-index: 9999999;
+    background: transparent;
+    top: 50px;
+  }
+  .header_area {
+    z-index: 999;
+  }
+  .mean-container a.meanmenu-reveal {
+    border: 1px solid #e62435;
+    color: #e62435;
+    right: 3% !important;
+    top: -32px;
+  }
+  .mean-container a.meanmenu-reveal span {
+    background: #e62435 none repeat scroll 0 0;
+  }
+  .mean-last {
+    width: 50% !important;
+  }
+  .mean-last a {
+    text-align: center !important;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text {
+    top: 26%;
+    left: 3%;
+    width: 96%;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text h1 {
+    font-size: 30px;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text p {
+    width: 90%;
+  }
+  .contact_area .contact_form {
+    margin-top: 40px;
+  }
+  .approach_area .ben_mar_bo {
+    margin-bottom: 0px;
+  }
+  .approach_area .approch_box {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .menu-shrink {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    position: absolute;
+    z-index: 9999999;
+    background: transparent;
+    top: 50px;
+  }
+  .header_area {
+    z-index: 999;
+  }
+  .mean-container a.meanmenu-reveal {
+    border: 1px solid #e62435;
+    color: #e62435;
+    right: 3% !important;
+    top: -32px;
+  }
+  .mean-container a.meanmenu-reveal span {
+    background: #e62435 none repeat scroll 0 0;
+  }
+  .mean-last {
+    width: 50% !important;
+  }
+  .mean-last a {
+    text-align: center !important;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text {
+    top: 30%;
+    left: 3%;
+    width: 96%;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text h1 {
+    font-size: 30px;
+  }
+  .hero_area .hero_slider_box .item .slider_item .slider_text p {
+    width: 90%;
+  }
+  .approach_area .ben_mar_bo {
+    margin-bottom: 0px;
+  }
+  .approach_area .approch_box {
+    margin-bottom: 30px;
+  }
+  .contact_area .contact_form {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-shrink {
+    display: none;
+  }
+  .mean-container .mean-bar {
+    position: absolute;
+    z-index: 9999999;
+    background: transparent;
+    top: 50px;
+  }
+  .header_area {
+    z-index: 999;
+  }
+  .mean-container a.meanmenu-reveal {
+    border: 1px solid #e62435;
+    color: #e62435;
+    right: 3% !important;
+    top: -32px;
+  }
+  .mean-container a.meanmenu-reveal span {
+    background: #e62435 none repeat scroll 0 0;
+  }
+  .mean-last {
+    width: 50% !important;
+  }
+  .mean-last a {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
