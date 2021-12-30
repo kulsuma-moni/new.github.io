@@ -82,25 +82,59 @@ button:focus {
 .default_btn {
   z-index: 1;
   position: relative;
-  font-size: 16px;
-  color: #fff;
-  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  padding: 0.5em 1em;
   outline: none;
   border: none;
-  background-color: #e62435;
-  text-decoration: none !important;
-  font-weight: 600;
-  line-height: 1;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  text-align: center;
+  background-color: #0a152a;
   text-transform: capitalize;
-  display: inline-block;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  transition: color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out;
+  -moz-transition: color 0.4s ease-in-out;
+}
+
+.default_btn::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #e62435;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
 }
 
 .default_btn:hover {
-  background: #e63e0b;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.default_btn:hover::before {
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.bok_btn {
+  background-color: #e62435;
+}
+
+.bok_btn::before {
+  background-color: #4b5280;
 }
 
 .section_title {
@@ -277,6 +311,37 @@ button:focus {
 .header_area .menu ul li a i {
   font-weight: 600;
   font-size: 18px;
+}
+
+.header_area .user_btn .btn {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header_area .user_btn .btn img {
+  margin-right: 5px;
+}
+
+.header_area .user_btn .dropdown-menu {
+  background: #fff;
+  text-align: left;
+}
+
+.header_area .user_btn .dropdown-menu li {
+  padding: 0;
+}
+
+.header_area .user_btn .dropdown-menu li a {
+  color: #000219;
+  background: transparent;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.header_area .user_btn .dropdown-menu li a:hover {
+  color: #e62435;
 }
 
 .menu-shrink {
@@ -474,53 +539,9 @@ button:focus {
   margin-top: 40px;
 }
 
-.service_area .service_book_btn .booking_btn {
-  z-index: 1;
-  position: relative;
+.service_area .service_book_btn .default_btn {
   font-size: 20px;
-  text-transform: capitalize;
-  color: white;
-  font-weight: 700;
   padding: 0.5em 2em;
-  outline: none;
-  border: none;
-  background-color: #06081be1;
-  overflow: hidden;
-  transition: color 0.4s ease-in-out;
-  -webkit-transition: color 0.4s ease-in-out;
-  -moz-transition: color 0.4s ease-in-out;
-}
-
-.service_area .service_book_btn .booking_btn::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  bottom: 100%;
-  right: 100%;
-  width: 1.5em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: #e62435;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-  -webkit-transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
-          transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.45s ease-in-out;
-  transition: -webkit-transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out;
-  transition: transform 0.45s ease-in-out, -webkit-transform 0.45s ease-in-out;
-  -webkit-transition: transform 0.45s ease-in-out;
-  -moz-transition: transform 0.45s ease-in-out;
-}
-
-.service_area .service_book_btn .booking_btn:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
-.service_area .service_book_btn .booking_btn:hover::before {
-  -webkit-transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
-          transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
 }
 
 .approach_area .ben_mar_bo {
@@ -1002,5 +1023,1589 @@ button:focus {
 .to-top i {
   font-size: 40px;
   color: #e62435;
+}
+
+.log_reg_area {
+  padding: 50px 0;
+}
+
+.log_reg_area .log_reg_box {
+  width: 60%;
+  margin: 0 auto;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.log_reg_area .log_reg_box nav {
+  margin-bottom: 50px;
+  -webkit-box-shadow: 1px 1px 5px 2px #3737377d;
+          box-shadow: 1px 1px 5px 2px #3737377d;
+}
+
+.log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link {
+  width: 50%;
+  text-transform: capitalize;
+  font-size: 22px;
+  line-height: 1.5;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(#000219), color-stop(53%, #000219), to(#4b5280));
+  background: linear-gradient(90deg, #000219 0%, #000219 53%, #4b5280 100%);
+  color: #fff;
+  padding: 15px 0;
+  border: 1px solid transparent;
+}
+
+.log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link.active {
+  background: transparent;
+  color: #000219;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box {
+  padding: 0 30px 40px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group {
+  position: relative;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input {
+  border: 1px solid #e7e7e7;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input::-webkit-input-placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000219;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input:-ms-input-placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000219;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input::-ms-input-placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000219;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input::placeholder {
+  text-transform: capitalize;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000219;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group input:focus {
+  border: 1px solid #e62435;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4d4d4d;
+  outline: 0;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form-group span {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  top: 25%;
+  right: 3%;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form_check input {
+  height: 15px;
+  margin-bottom: 50px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .form_check label {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4d4c4c;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .for_pass {
+  text-align: right;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .condition {
+  margin-bottom: 50px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .condition span a {
+  color: #e44855;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .submit_btn .btn {
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 20px;
+  background: #000219;
+  padding: 6px 40px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .submit_btn .btn:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .account_creat span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000219;
+  font-weight: 400;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .account_creat a {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #e62435;
+  font-weight: 500;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .account_creat a:hover {
+  color: #e62435;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .signin_account {
+  margin-top: 6px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .signin_account p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .signin_account p a {
+  color: #e62435;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .signin_with p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000219;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.log_reg_area .log_reg_box .lr_tab_box form .signin_with ul li a img:hover {
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+}
+
+/* INNER BANNER CSS */
+.inner_banner_area {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  height: 400px;
+  width: 100%;
+}
+
+.inner_banner_area::after {
+  position: absolute;
+  content: '';
+  background: #000219c5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.inner_banner_area .inner_titel {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  right: 0%;
+  z-index: 9;
+}
+
+.inner_banner_area .inner_titel h2 {
+  font-size: 42px;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.34;
+  letter-spacing: 1.2px;
+}
+
+.booking_process_area {
+  padding: 40px 0 80px;
+}
+
+.booking_process_area .client_profile_box {
+  -webkit-box-shadow: 1px 1px 20px 1px #e0e0e0;
+          box-shadow: 1px 1px 20px 1px #e0e0e0;
+  padding: 40px 20px;
+}
+
+.booking_process_area .client_profile_box .cl_top_info {
+  text-align: center;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .client_img {
+  display: inline-block;
+  padding: 8px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .client_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  margin: 0 auto;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_titel {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_titel h4 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #000219;
+  margin-bottom: 0;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details {
+  margin-bottom: 20px;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul {
+  text-align: center;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000219;
+  width: 66%;
+  margin: 0 15px 10px;
+  line-height: 1.5;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul li span {
+  margin-right: 15px;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul li span i {
+  color: #4d4d4d;
+  font-size: 16px;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul li a {
+  color: #4d4d4d;
+}
+
+.booking_process_area .client_profile_box .cl_top_info .cl_info_details ul li a:hover {
+  color: #4b5280;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom {
+  padding-top: 20px;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom ul li {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000219;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom ul li span {
+  margin-right: 15px;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom ul li a {
+  color: #000219;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom ul li a:hover {
+  color: #4b5280;
+}
+
+.booking_process_area .client_profile_box .cl_pro_bottom ul li:hover {
+  color: #4b5280;
+}
+
+.booking_process_area .profile_detail_cl .booking_status {
+  -webkit-box-shadow: 1px 1px 20px 1px #e0e0e0;
+          box-shadow: 1px 1px 20px 1px #e0e0e0;
+  padding: 30px;
+  margin: 0 0 20px 0;
+}
+
+.booking_process_area .profile_detail_cl .booking_status a {
+  color: #0a152a;
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.booking_process_area .profile_detail_cl .booking_status a:hover {
+  color: #e62435;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right {
+  -webkit-box-shadow: 1px 1px 20px 1px #e0e0e0;
+          box-shadow: 1px 1px 20px 1px #e0e0e0;
+  padding: 30px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name {
+  margin-bottom: 30px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #000219;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000219;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name p span {
+  color: #e62435;
+  font-size: 30px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box {
+  margin-bottom: 40px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .selected_date p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #000219;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .selected_date span {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000219;
+  line-height: 1.5;
+  text-transform: capitalize;
+  opacity: .7;
+  text-align: left;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender {
+  position: relative;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender input {
+  width: 100%;
+  padding: 0 30px;
+  height: 45px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender input:focus {
+  border: 1px solid #4b5280;
+  line-height: 1.5;
+  outline: 0;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender .ca_icon {
+  position: absolute;
+  left: 2%;
+  top: 35%;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender .dropdown_icon {
+  position: absolute;
+  right: 2%;
+  top: 35%;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .left_arrow {
+  width: 2%;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .right_arrow {
+  width: 2%;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li {
+  float: left;
+  width: 13%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date {
+  margin-top: 15px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li {
+  text-align: center;
+  width: 13.5%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li a {
+  color: #000219;
+  border: 1px solid #ccc;
+  background: #ccc;
+  padding: 4px 8px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li a:hover {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appoinment_btn {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.booking_process_area .profile_detail_cl .cl_al_order {
+  -webkit-box-shadow: 1px 1px 20px 1px #e0e0e0;
+          box-shadow: 1px 1px 20px 1px #e0e0e0;
+}
+
+.booking_process_area .profile_detail_cl #order {
+  display: none;
+}
+
+.payment_proceedure_area {
+  padding: 40px 0 80px;
+}
+
+.payment_proceedure_area #boking_step_2 {
+  display: none;
+}
+
+.payment_proceedure_area #boking_step_3 {
+  display: none;
+}
+
+.payment_proceedure_area #boking_step_4 {
+  display: none;
+}
+
+.payment_proceedure_area #guest_information {
+  display: none;
+}
+
+.payment_proceedure_area .hidden {
+  display: none;
+}
+
+.payment_proceedure_area .opaque {
+  opacity: 0;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.payment_proceedure_area .disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.payment_proceedure_area #checkout-progress {
+  font-size: 16px;
+  font-weight: 900;
+  position: relative;
+}
+
+.payment_proceedure_area #checkout-progress:before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  top: 19%;
+  height: 10px;
+  width: 64%;
+  background-color: #ccc;
+  transform: translateY(-50%) perspective(1000px);
+  -webkit-transform: translateY(-50%) perspective(1000px);
+  -moz-transform: translateY(-50%) perspective(1000px);
+  -ms-transform: translateY(-50%) perspective(1000px);
+  -o-transform: translateY(-50%) perspective(1000px);
+  margin: 0 auto;
+}
+
+.payment_proceedure_area #checkout-progress:after {
+  content: "";
+  position: absolute;
+  left: 18%;
+  top: 19%;
+  height: 10px;
+  width: 64%;
+  background-color: #0a152a;
+  transform: scaleX(0) translateY(-50%) perspective(1000px);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-transform: scaleX(0) translateY(-50%) perspective(1000px);
+  -moz-transform: scaleX(0) translateY(-50%) perspective(1000px);
+  -ms-transform: scaleX(0) translateY(-50%) perspective(1000px);
+  -o-transform: scaleX(0) translateY(-50%) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress.step-2:after {
+  transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+  -webkit-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+  -moz-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+  -ms-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+  -o-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress.step-3:after {
+  transform: scaleX(1) translateY(-50%) perspective(1000px);
+  -webkit-transform: scaleX(1) translateY(-50%) perspective(1000px);
+  -moz-transform: scaleX(1) translateY(-50%) perspective(1000px);
+  -ms-transform: scaleX(1) translateY(-50%) perspective(1000px);
+  -o-transform: scaleX(1) translateY(-50%) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress.step-4:after {
+  transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+  -webkit-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+  -moz-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+  -ms-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+  -o-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar {
+  width: 100%;
+  display: inline-block;
+  background: transparent !important;
+  color: #fff;
+  text-align: center;
+  background-color: #007bff;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+  overflow: visible;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar ul li {
+  width: 32%;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step {
+  z-index: 2;
+  position: relative;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step .step-label {
+  transform: translateX(-50%) perspective(1000px);
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ccc;
+  text-transform: capitalize;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translateX(-50%) perspective(1000px);
+  -moz-transform: translateX(-50%) perspective(1000px);
+  -ms-transform: translateX(-50%) perspective(1000px);
+  -o-transform: translateX(-50%) perspective(1000px);
+  text-align: right;
+  margin-left: 117px;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step span {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+  margin-bottom: 20px;
+  transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+  -webkit-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+  -moz-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+  -ms-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+  -o-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
+  color: #fff;
+  position: absolute;
+  right: 43%;
+  top: 12%;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+  -moz-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+  -ms-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+  -o-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.active span, .payment_proceedure_area #checkout-progress .progress-bar .step.active .step-label {
+  color: #2C3E50;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.valid .fa-check {
+  transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+  -moz-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+  -ms-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+  -o-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.valid span {
+  color: #0a152a;
+  transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+  -webkit-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+  -moz-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+  -ms-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+  -o-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.valid .step-label {
+  color: #0a152a !important;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 36%;
+  top: 12%;
+  transform: translate(-50%, -50%) perspective(1000px);
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: translate(-50%, -50%) perspective(1000px);
+  -moz-transform: translate(-50%, -50%) perspective(1000px);
+  -ms-transform: translate(-50%, -50%) perspective(1000px);
+  -o-transform: translate(-50%, -50%) perspective(1000px);
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.active:after {
+  border: 5px solid #0a152a;
+}
+
+.payment_proceedure_area #checkout-progress .progress-bar .step.valid:after {
+  background-color: #0a152a;
+  border: 5px solid #0a152a;
+}
+
+.payment_proceedure_area .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+.payment_proceedure_area .first_btn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+  padding: 10px 15px;
+  position: relative;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint p {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint p i {
+  color: #0a152a;
+  padding-right: 10px;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint p a {
+  color: #0a152a;
+  text-decoration: none;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint p a:hover {
+  color: #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process__stepint::before {
+  content: '';
+  position: absolute;
+  border-left: 4px solid #e62435;
+  top: 0%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+}
+
+.payment_proceedure_area #boking_step_1 .process__step_titel h5 {
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #000219;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+  padding: 10px 15px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start label span {
+  color: #7e153d;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start input:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start input::-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start select {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start select:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition input[type="checkbox"] {
+  width: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition input[type="checkbox"]:focus {
+  border: 1px solid #0a152a;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition input[type="checkbox"]:hover {
+  border: 1px solid #0a152a;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition span {
+  color: #161616;
+  text-transform: initial;
+  font-size: 14px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #0a152a;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information label span {
+  color: #7e153d;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information input:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information input::-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information select {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #guest_information select:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #000219;
+  font-weight: 700;
+  letter-spacing: normal;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request p {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea {
+  width: 60%;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea::-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start #sp_request textarea::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree {
+  margin-top: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree input[type="checkbox"] {
+  width: 20px;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree input[type="checkbox"]:focus {
+  border: 1px solid #0a152a;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree input[type="checkbox"]:hover {
+  border: 1px solid #0a152a;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree span {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree span a {
+  color: #0a152a;
+  font-weight: 500;
+}
+
+.payment_proceedure_area #boking_step_1 .process_start .condition_agree span a:hover {
+  color: #e62435;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .ann {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+  padding: 10px 15px;
+  position: relative;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .ann p {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .ann p i {
+  color: #0a152a;
+  padding-right: 10px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .ann::before {
+  content: '';
+  position: absolute;
+  border-left: 4px solid #e62435;
+  top: 0%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .payment {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+  padding: 20px 15px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .payment .card_header {
+  background-color: #0a152a;
+  border: 1px solid #0a152a;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .payment p.con_mail {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .payment .titel p {
+  font-size: 16px;
+  text-transform: initial;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation label span {
+  color: #7e153d;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation input:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation input::-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw {
+  position: relative;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon {
+  position: absolute;
+  top: 47%;
+  right: 1px;
+  background-color: #f7f2f2;
+  padding: 5px 8px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon i {
+  color: #0a152a;
+  font-size: 14px;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree span {
+  font-size: 14px;
+  text-transform: initial;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree span a {
+  color: #0a152a;
+}
+
+.payment_proceedure_area #boking_step_2 .payment_confirmation .con_agre {
+  margin-top: 0;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+  padding: 20px 15px;
+  margin-top: 50px;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #0a152a;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin-bottom: 20px;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final label {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final label span {
+  color: #7e153d;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input {
+  width: 50%;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input:focus {
+  border: 1px solid #e62435;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input::-webkit-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input:-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input::-ms-input-placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_3 .booking_final input::placeholder {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.payment_proceedure_area #boking_step_4 .modalbox.success {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 2px;
+  background: #fff;
+  padding: 25px 25px 15px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.payment_proceedure_area #boking_step_4 .modalbox.success h5 {
+  font-size: 26px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #161616;
+  font-weight: 500;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.payment_proceedure_area #boking_step_4 .modalbox.success.animate .icon {
+  -webkit-animation: fall-in 0.75s;
+  animation: fall-in 0.75s;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.payment_proceedure_area #boking_step_4 .modalbox.success .icon {
+  position: relative;
+  margin: 0 auto;
+  margin-top: -75px;
+  background: #0a152a;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.payment_proceedure_area #boking_step_4 .modalbox.success .icon img {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.payment_proceedure_area #boking_step_4 .center .change {
+  clear: both;
+  display: block;
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+@-webkit-keyframes fall-in {
+  0% {
+    -webkit-transform: scale(3, 3);
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes fall-in {
+  0% {
+    -webkit-transform: scale(3, 3);
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fall-in {
+  0% {
+    -webkit-transform: scale(3, 3);
+    transform: scale(3, 3);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+.payment_proceedure_area .booking_details_right {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+          box-shadow: 0px 0px 10px 1px rgba(71, 85, 95, 0.08);
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .titel h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 1.6;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: #0a152a;
+  padding: 10px 10px;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eae5e5;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn ul li p {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn ul li .time_info span {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: .5px;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn ul .info_be {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn p {
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #161616;
+  font-weight: 400;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn p span {
+  font-weight: 600;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .info_ctn p a {
+  color: #0a152a;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .change_selection {
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eae5e5;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .change_selection p {
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0px;
+  color: #161616;
+  font-weight: 600;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .change_selection p span {
+  font-weight: 400;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .change_selection p a {
+  color: #0a152a;
+  font-weight: 400;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost {
+  padding: 0px 15px;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_1 {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #eae5e5;
+  margin-bottom: 20px;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_1 li span {
+  font-size: 20px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: #161616;
+  font-weight: 600;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_1 li .de_tel {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost p {
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #161616;
+  font-weight: 600;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_2 {
+  margin-bottom: 20px;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_2 li {
+  width: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cost_ctn_2 li span {
+  display: inline-block;
+  text-transform: capitalize;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #161616;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cancel {
+  padding: 10px 0px;
+  border-top: 1px solid #eae5e5;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cancel p {
+  text-transform: none;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #161616;
+  font-weight: 600;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cancel p a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0a152a;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .cancel p a:hover {
+  color: #e62435;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .bok_fc {
+  padding: 10px 0px;
+  border-top: 1px solid #eae5e5;
+}
+
+.payment_proceedure_area .booking_details_right .booking_info .booking_cost .bok_fc li {
+  display: block;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #161616;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

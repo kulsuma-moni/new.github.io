@@ -46,6 +46,16 @@
   .approach_area .approch_box {
     margin-bottom: 30px;
   }
+  .log_reg_area .log_reg_box {
+    width: 100%;
+  }
+  .log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  .log_reg_area .log_reg_box .lr_tab_box {
+    padding: 0 20px 20px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -96,6 +106,19 @@
   .contact_area .contact_form {
     margin-top: 40px;
   }
+  .log_reg_area .log_reg_box {
+    width: 100%;
+  }
+  .log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  .log_reg_area .log_reg_box .lr_tab_box {
+    padding: 0 20px 20px;
+  }
+  .log_reg_area {
+    padding: 30px 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -125,6 +148,25 @@
   }
   .mean-last a {
     text-align: center !important;
+  }
+  .log_reg_area .log_reg_box {
+    width: 100%;
+  }
+  .log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  .log_reg_area .log_reg_box .lr_tab_box {
+    padding: 0 20px 20px;
+  }
+  .log_reg_area {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .menu-shrink {
+    display: none;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

@@ -6,7 +6,7 @@
 
 	// Sticky Menu
 	$(window).on('scroll', function() {
-        if ($(this).scrollTop() > 100){
+        if ($(this).scrollTop() > 200){
         $('.header_area').addClass('menu-shrink animated slideInDown');
         } else {
         $('.header_area').removeClass('menu-shrink animated slideInUp');
@@ -83,4 +83,28 @@
 		bottom: 30       //numeric value (as pixels) for position from bottom. It will work only if the 'position' is set 'true'
 	});
 
+    $('#basic').daterangepicker({
+        ranges: {
+           'Today': [moment(), moment()],
+           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month': [moment().startOf('month'), moment().endOf('month')],
+           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+      });
+    // data-background
+    $("[data-background]").each(function(){
+        $(this).css("background-image", "url("+ $(this).attr("data-background") + ")")
+        });
+
+
+        $("#order_cn_btn").click(function(){
+            $("#appoinment,#status").hide(),
+            $("#order").show()
+        });
+        $("#apoinment_cn_btn").click(function(){
+            $("#order").hide(),
+            $("#appoinment , #status").show()
+        });
 })(jQuery);
