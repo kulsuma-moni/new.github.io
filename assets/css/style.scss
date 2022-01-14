@@ -88,6 +88,9 @@ outline:0;
 .section_padding{
     padding: 80px 0;
 }
+.section_padding_2{
+    padding: 50px 0 80px;
+}
 .default_btn {
     z-index: 1;
     position: relative;
@@ -105,6 +108,9 @@ outline:0;
     transition: color 0.4s ease-in-out;
     -webkit-transition: color 0.4s ease-in-out;
     -moz-transition: color 0.4s ease-in-out;
+    transform: skewX(-22deg) skewY(0deg);
+    -webkit-transform: skewX(-22deg) skewY(0deg);
+    -moz-transform: skewX(-22deg) skewY(0deg);
     &::before{
         content: '';
         z-index: -1;
@@ -246,6 +252,9 @@ outline:0;
                             &:hover{
                                 color: $font_colour_3;
                             }
+                            &.active{
+                                color: $font_colour_3;
+                            }
                         }
                       }
                       &::before{
@@ -283,8 +292,7 @@ outline:0;
                         font-weight: 600;
                         font-size: 18px; 
                     }
-                }        
-                    
+                }     
             }
         }
     }
@@ -337,89 +345,57 @@ outline:0;
 
 // Hero Area CSS Start
 .hero_area{
-    height: 100vh;
+    height:100vh;
     width: 100%;
     position: relative;
-   
-    .hero_slider_box{
-        .item{
-            .slider_item{
-                img{
-                    height: 100vh;
-                    width: 100%;
-                }
-                .slider_text{
-                    position: absolute;
-                    top: 35%;
-                    left: 5%;
-                    z-index:9;
-                    width:50%;
-                    span{
-                        font-size: 16px;
-                        line-height: 1.4;
-                        color: $font_colour_3;
-                        margin-bottom: 10px;
-                        font-weight:700;
-                        letter-spacing: 1px;
-                    }
-                    h1{
-                        font-size: 54px;
-                        line-height: 1.4;
-                        color: $white_colour;
-                        margin-bottom: 20px;
-                        font-weight:700;
-                    }
-                    p{
-                        font-size: 16px;
-                        line-height: 1.5;
-                        color: $white_colour;
-                        margin-bottom: 20px;
-                        font-weight:400;
-                        width: 80%;
-                    }
-                }
-                &::after{
-                    position: absolute;
-                    content: '';
-                    background: #000219c5;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 1;
-                }
-            }
-        }
-
-    }
-    .owl-dots {
+    #myVideo {
         position: absolute;
-        bottom: 2%;
         left: 0;
-        right: 0;
-        .owl-dot {
+        top: 0;
+        width: 100%;
+       height: 100%;
+       object-fit: cover;
+      }
+      .video_content{
+               position: absolute;
+                top: 35%;
+                left: 5%;
+                z-index:9;
+                width:50%;
             span{
-                height:10px ;
-                width: 10px ;
-                display: block;
-                background-color: $font_colour_1;
-                opacity: 0.8 ;
-                border-radius: 0 ;
-                transform:rotate(45deg) !important;
-                -webkit-transform:rotate(45deg) !important;
-                -moz-transform:rotate(45deg) !important;
-                margin-right: 15px;
-                &:hover{
-                    background-color: $font_colour_3;
+                    font-size: 16px;
+                    line-height: 1.4;
+                    color: $font_colour_3;
+                    margin-bottom: 10px;
+                    font-weight:700;
+                    letter-spacing: 1px;
                 }
+            h1 {
+                font-size: 54px;
+                line-height: 1.4;
+                color: $white_colour;
+                margin-bottom: 20px;
+                font-weight:700;
             }
-            &.active{
-                span{
-                    background-color:$font_colour_3;
-                }
+            p{
+                font-size: 16px;
+                line-height: 1.5;
+                color: $white_colour;
+                margin-bottom: 20px;
+                font-weight:400;
+                width: 80%;
             }
+      }
+       &::after{
+            position: absolute;
+            content: '';
+            background: #000219c5;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
-    }
 }
 // Hero Area CSS End
 
@@ -529,6 +505,17 @@ outline:0;
 .approach_area{
     .ben_mar_bo{
         margin-bottom: 90px;
+    }
+    .app_head{
+        p{
+            font-size: 15px;
+            line-height: 1.4;
+            color: $font_colour_1;
+            font-weight: 500;
+            text-align: left;
+            width: 70%;
+            margin: 0 auto 40px;
+        }
     }
     .approch_box{
         display: flex;
@@ -850,8 +837,10 @@ outline:0;
 // COPYRIGHT AREA CSS END
 // Footer Area CSS Start
 .footer_area {
-    background:linear-gradient(90deg, rgba(0,2,25,1) 0%, rgba(0,2,25,1) 53%, rgba(75,82,128,1) 100%);
+    margin-top: 60px;
+    padding: 40px 0;
     position: relative;
+    background:$font_colour_1;
     p {
         font-size: 16px;
         color: $white_colour;
@@ -923,6 +912,46 @@ outline:0;
             }
         }
     }
+
+
+    /* waves */
+.ocean {
+    height: 80px; /* change the height of the waves here */
+    width: 100%;
+    position: absolute;
+    top: -17%;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+  
+  .wave {
+    background: url("../image/wave.svg");
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  
+  .wave:nth-of-type(2) {
+    bottom: 0;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.5;
+  }
+  
+  .wave:nth-of-type(3) {
+    bottom: 0;
+    opacity: 1;
+  }
+  @keyframes wave {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-25%);}
+    100% {transform: translateX(-50%);}
+}
+
+  
 }
 // TO TOP BUTTON CSS START
     .to-top{
@@ -1106,7 +1135,7 @@ outline:0;
     background-size: cover;
     position: relative;
     top: 0;
-    height: 400px;
+    height: 300px;
     width: 100%;
     &::after{
         position: absolute;
@@ -1122,7 +1151,7 @@ outline:0;
         top: 40%;
         left: 0%;
         right: 0%;
-        z-index: 9;
+        z-index: 1;
         
        h2{
             font-size: 42px;
@@ -1300,9 +1329,9 @@ outline:0;
                     position: relative;
                     input{
                         width: 100%;
-                        padding:0 30px;
+                        padding:0 0px 0 30px;
                         height: 45px;
-                        
+                        cursor: pointer;
                         &:focus{
                             border: 1px solid $font_colour_2;
                             line-height: 1.5;
@@ -1378,7 +1407,23 @@ outline:0;
         }
         .cl_al_order{
             box-shadow: 1px 1px 20px 1px #e0e0e0;
-
+            .table{
+                thead{
+                    tr{
+                        th{
+                            text-transform: capitalize;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                tbody{
+                    tr{
+                        td{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
         }
         #order{
             display: none;
@@ -1430,8 +1475,6 @@ outline:0;
     transform: translateY(-50%) perspective(1000px);
     -webkit-transform: translateY(-50%) perspective(1000px);
     -moz-transform: translateY(-50%) perspective(1000px);
-    -ms-transform: translateY(-50%) perspective(1000px);
-    -o-transform: translateY(-50%) perspective(1000px);
     margin: 0 auto;
   }
     #checkout-progress:after {
@@ -1447,29 +1490,21 @@ outline:0;
     transition: transform 0.5s ease;
     -webkit-transform: scaleX(0) translateY(-50%) perspective(1000px);
     -moz-transform: scaleX(0) translateY(-50%) perspective(1000px);
-    -ms-transform: scaleX(0) translateY(-50%) perspective(1000px);
-    -o-transform: scaleX(0) translateY(-50%) perspective(1000px);
   }
     #checkout-progress.step-2:after {
     transform: scaleX(0.5) translateY(-50%) perspective(1000px);
     -webkit-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
     -moz-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
-    -ms-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
-    -o-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
   }
     #checkout-progress.step-3:after {
     transform: scaleX(1) translateY(-50%) perspective(1000px);
     -webkit-transform: scaleX(1) translateY(-50%) perspective(1000px);
     -moz-transform: scaleX(1) translateY(-50%) perspective(1000px);
-    -ms-transform: scaleX(1) translateY(-50%) perspective(1000px);
-    -o-transform: scaleX(1) translateY(-50%) perspective(1000px);
   }
   #checkout-progress.step-4:after {
     transform: scaleX(1.041) translateY(-50%) perspective(1000px);
     -webkit-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
     -moz-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
-    -ms-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
-    -o-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
 }
     #checkout-progress .progress-bar {
     width: 100%;
@@ -1499,8 +1534,6 @@ outline:0;
     transition: 0.3s ease;
     -webkit-transform: translateX(-50%) perspective(1000px);
     -moz-transform: translateX(-50%) perspective(1000px);
-    -ms-transform: translateX(-50%) perspective(1000px);
-    -o-transform: translateX(-50%) perspective(1000px);
 	text-align: right;
 	margin-left: 117px;
   }
@@ -1514,8 +1547,6 @@ outline:0;
     transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
     -webkit-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
     -moz-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
-    -ms-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
-    -o-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
   }
     #checkout-progress .progress-bar .step .fa-check {
     color: #fff;
@@ -1526,8 +1557,6 @@ outline:0;
     transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
     -webkit-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
     -moz-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
-    -ms-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
-    -o-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
   }
     #checkout-progress .progress-bar .step.active span, #checkout-progress .progress-bar .step.active .step-label {
     color: #2C3E50;
@@ -1536,16 +1565,12 @@ outline:0;
     transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
     -webkit-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
     -moz-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
-    -ms-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
-    -o-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
   }
     #checkout-progress .progress-bar .step.valid span {
     color: $basic_color_3;
     transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
     -webkit-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
     -moz-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
-    -ms-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
-    -o-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
   }
     #checkout-progress .progress-bar .step.valid .step-label {
     color: $basic_color_3 !important;
@@ -1565,8 +1590,6 @@ outline:0;
     transition: 0.3s ease;
     -webkit-transform: translate(-50%, -50%) perspective(1000px);
     -moz-transform: translate(-50%, -50%) perspective(1000px);
-    -ms-transform: translate(-50%, -50%) perspective(1000px);
-    -o-transform: translate(-50%, -50%) perspective(1000px);
   }
     #checkout-progress .progress-bar .step.active:after {
     border: 5px solid $basic_color_3;
@@ -2272,7 +2295,6 @@ outline:0;
 					}
 				}
 				p{
-					// padding:10px 0px;
 					text-transform: capitalize;
 					line-height: 1.6;
 					font-size: 16px;
@@ -2335,3 +2357,326 @@ outline:0;
 	}
 }
 // PAYMENT PROCEEDURE AREA END
+// RMS MEASERMENT PAGE CSS START
+.rms_measurment_area{
+    .rms_measurment_box{
+        .rms_img{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-image: url(../image/service_1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 250px;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -o-border-radius: 6px;
+            -ms-border-radius: 6px;
+        }
+        .product_offer_box{
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            .offer_box{
+                text-align: center;
+                padding:15px 20px;
+                border: 1px solid $font_colour_1;
+                width: 25%;
+                margin-right: 40px;
+                border-radius: 3%;
+                -webkit-border-radius: 3%;
+                -moz-border-radius: 3%;
+                .box_icon{
+                    margin-bottom: 10px;
+                    img{
+                        max-width: 45px;
+                    }
+                }
+                .box_titel{
+                    margin-bottom: 15px;
+                    h5{
+                        font-size: 16px;
+                        line-height: 1.4;
+                        text-transform: capitalize;
+                        color: $font_colour_1;
+                        margin-bottom: 10px;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+                    }
+                    span{
+                        font-size: 14px;
+                        line-height: 1.4;
+                        text-transform: capitalize;
+                        color: $font_colour_1;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                    }
+                }
+                .offfer_price{
+                    span{
+                        font-size: 25px;
+                        color: $font_colour_3;
+                        line-height: 1;
+                    }
+                }
+                .offer_btn{
+                    margin-top: 10px;
+                    .default_btn{
+                        width: 100%;
+                    }
+
+                }
+            }
+            .offer_details{
+                ul{
+                    li{
+                        display: block;
+                        position: relative;
+                        padding-left: 16px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: $font_colour_1;
+                        margin-bottom: 10px;
+                        &::before{
+                            position: absolute;
+                            content:'';
+                            width: 7px;
+                            height: 7px;
+                            background: $font_colour_3;
+                            top: 50%;
+                            left: 0;
+                            transform:rotate(45deg) !important;
+                            -webkit-transform:rotate(45deg) !important;
+                            -moz-transform:rotate(45deg) !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .service_book_btn{
+            margin-top: 60px;
+            .default_btn{
+                padding: 12px 60px;
+            }
+        }
+    }
+    .more_information_box{
+        padding-top: 60px;
+        .more_informaion_left{
+            .titel{
+                h5{
+                    font-size: 26px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    text-transform: capitalize;
+                    color: $font_colour_1;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+            ul{
+                li{
+                    display: block;
+                    position: relative;
+                    padding-left: 16px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $font_colour_1;
+                    margin-bottom: 10px;
+                    &::before{
+                        position: absolute;
+                        content:'';
+                        width: 7px;
+                        height: 7px;
+                        background: $font_colour_3;
+                        top: 50%;
+                        left: 0;
+                        transform:rotate(45deg) !important;
+                        -webkit-transform:rotate(45deg) !important;
+                        -moz-transform:rotate(45deg) !important;
+                        
+                    }
+                }
+            }
+        }
+        .more_informaion_right{
+            .more_info_img{
+                margin-bottom: 40px;
+            }
+            .info_btns{
+                .btn{
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    width: 60%;
+                    margin: 0 auto 15px;
+                    span{
+                        i{
+                            margin-right: 15px;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .hdr_photo_btn{
+                .pop_img{
+                    width: 45%;
+                }
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline-block;
+
+                        .btn{
+                            margin-bottom: 20px;
+                            display: flex;
+                            align-items: center;
+                            width:100%;
+                            margin: 0;
+                            span{
+                                i{
+                                    margin-right: 15px;
+                                }
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// RMS MEASERMENT PAGE CSS END
+// TEAM AREA CSS START
+
+.team {
+    .box {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all .5s ease-in-out;
+        .image {
+            position: relative;
+            height: 100%;
+            .social-icons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #ffffff;
+                z-index: 20;
+                text-decoration: none;
+                opacity: 0;
+                margin-top: 100px;
+                padding: 8px 15px;
+                background: #ffffff;
+                border-radius: 35px;
+                transition: all 0.5s ease-in-out;
+                i {
+                    font-size: 18px;
+                    padding: 0 7px;
+                    color: $font_colour_1;
+                    &:hover{
+                        color: $font_colour_3;
+                    }
+                }
+            }
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background:#00021993;
+                top: 0;
+                opacity: 0;
+                transition: all 0.5s ease-in-out;
+                z-index: 15;
+            }
+        }
+        h3 {
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        h4 {
+            margin: 0;
+            padding: 0;
+            font-size: 13px;
+            color: #999999;
+            font-weight: 400;
+            margin-top: 5px;
+            padding-bottom: 25px;
+        }
+        &:hover {
+            transform: translateY(-15px);
+            -webkit-transform: translateY(-15px);
+            -moz-transform: translateY(-15px);
+            .image {
+                .overlay {
+                    opacity: 0.85;
+                }
+                .social-icons{
+                    margin-top: 0;
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+}
+// TEAM AREA CSS END
+
+// TERMS & CONDITIONS PAGE CSS START
+
+.terms_condition_area{
+    .terms_condition_box{
+        .titel{
+            margin-bottom: 30px;
+            h2{
+                font-size: 40px;
+                line-height: 1.5;
+                text-transform: capitalize;
+                color: $font_colour_3;
+                font-weight: 700;
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        .conditions{
+            ul{
+                li{
+                    display: block;
+                    position: relative;
+                    color: $font_colour_1;
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &::before{
+                        position: absolute;
+                        content:'';
+                        width: 7px;
+                        height: 7px;
+                        background: $font_colour_3;
+                        top: 50%;
+                        left: 0;
+                        transform:rotate(45deg) !important;
+                        -webkit-transform:rotate(45deg) !important;
+                        -moz-transform:rotate(45deg) !important;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

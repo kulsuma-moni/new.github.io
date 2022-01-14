@@ -79,6 +79,10 @@ button:focus {
   padding: 80px 0;
 }
 
+.section_padding_2 {
+  padding: 50px 0 80px;
+}
+
 .default_btn {
   z-index: 1;
   position: relative;
@@ -96,6 +100,9 @@ button:focus {
   transition: color 0.4s ease-in-out;
   -webkit-transition: color 0.4s ease-in-out;
   -moz-transition: color 0.4s ease-in-out;
+  transform: skewX(-22deg) skewY(0deg);
+  -webkit-transform: skewX(-22deg) skewY(0deg);
+  -moz-transform: skewX(-22deg) skewY(0deg);
 }
 
 .default_btn::before {
@@ -273,6 +280,10 @@ button:focus {
   color: #e62435;
 }
 
+.header_area .menu ul li .sub_menu li a.active {
+  color: #e62435;
+}
+
 .header_area .menu ul li .sub_menu::before {
   content: '';
   position: absolute;
@@ -364,12 +375,17 @@ button:focus {
   position: relative;
 }
 
-.hero_area .hero_slider_box .item .slider_item img {
-  height: 100vh;
+.hero_area #myVideo {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.hero_area .hero_slider_box .item .slider_item .slider_text {
+.hero_area .video_content {
   position: absolute;
   top: 35%;
   left: 5%;
@@ -377,7 +393,7 @@ button:focus {
   width: 50%;
 }
 
-.hero_area .hero_slider_box .item .slider_item .slider_text span {
+.hero_area .video_content span {
   font-size: 16px;
   line-height: 1.4;
   color: #e62435;
@@ -386,7 +402,7 @@ button:focus {
   letter-spacing: 1px;
 }
 
-.hero_area .hero_slider_box .item .slider_item .slider_text h1 {
+.hero_area .video_content h1 {
   font-size: 54px;
   line-height: 1.4;
   color: #fff;
@@ -394,7 +410,7 @@ button:focus {
   font-weight: 700;
 }
 
-.hero_area .hero_slider_box .item .slider_item .slider_text p {
+.hero_area .video_content p {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
@@ -403,7 +419,7 @@ button:focus {
   width: 80%;
 }
 
-.hero_area .hero_slider_box .item .slider_item::after {
+.hero_area::after {
   position: absolute;
   content: '';
   background: #000219c5;
@@ -412,34 +428,6 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 1;
-}
-
-.hero_area .owl-dots {
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-}
-
-.hero_area .owl-dots .owl-dot span {
-  height: 10px;
-  width: 10px;
-  display: block;
-  background-color: #000219;
-  opacity: 0.8;
-  border-radius: 0;
-  transform: rotate(45deg) !important;
-  -webkit-transform: rotate(45deg) !important;
-  -moz-transform: rotate(45deg) !important;
-  margin-right: 15px;
-}
-
-.hero_area .owl-dots .owl-dot span:hover {
-  background-color: #e62435;
-}
-
-.hero_area .owl-dots .owl-dot.active span {
-  background-color: #e62435;
 }
 
 .service_area .service_box {
@@ -546,6 +534,16 @@ button:focus {
 
 .approach_area .ben_mar_bo {
   margin-bottom: 90px;
+}
+
+.approach_area .app_head p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #000219;
+  font-weight: 500;
+  text-align: left;
+  width: 70%;
+  margin: 0 auto 40px;
 }
 
 .approach_area .approch_box {
@@ -928,9 +926,11 @@ button:focus {
 }
 
 .footer_area {
-  background: -webkit-gradient(linear, left top, right top, from(#000219), color-stop(53%, #000219), to(#4b5280));
-  background: linear-gradient(90deg, #000219 0%, #000219 53%, #4b5280 100%);
+  margin-top: 60px;
+  padding: 40px 0;
   position: relative;
+  background: #000219;
+  /* waves */
 }
 
 .footer_area p {
@@ -1018,6 +1018,70 @@ button:focus {
 
 .footer_area .single_footer_widget .footer_links_list li a:hover {
   color: #e62435;
+}
+
+.footer_area .ocean {
+  height: 80px;
+  /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  top: -17%;
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.footer_area .wave {
+  background: url("../image/wave.svg");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  -webkit-animation: wave 10s -3s linear infinite;
+          animation: wave 10s -3s linear infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.footer_area .wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.5;
+}
+
+.footer_area .wave:nth-of-type(3) {
+  bottom: 0;
+  opacity: 1;
+}
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes wave {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 .to-top i {
@@ -1218,7 +1282,7 @@ button:focus {
   background-size: cover;
   position: relative;
   top: 0;
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 
@@ -1237,7 +1301,7 @@ button:focus {
   top: 40%;
   left: 0%;
   right: 0%;
-  z-index: 9;
+  z-index: 1;
 }
 
 .inner_banner_area .inner_titel h2 {
@@ -1446,8 +1510,9 @@ button:focus {
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender input {
   width: 100%;
-  padding: 0 30px;
+  padding: 0 0px 0 30px;
   height: 45px;
+  cursor: pointer;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender input:focus {
@@ -1527,6 +1592,15 @@ button:focus {
           box-shadow: 1px 1px 20px 1px #e0e0e0;
 }
 
+.booking_process_area .profile_detail_cl .cl_al_order .table thead tr th {
+  text-transform: capitalize;
+  font-size: 15px;
+}
+
+.booking_process_area .profile_detail_cl .cl_al_order .table tbody tr td {
+  font-size: 14px;
+}
+
 .booking_process_area .profile_detail_cl #order {
   display: none;
 }
@@ -1583,8 +1657,6 @@ button:focus {
   transform: translateY(-50%) perspective(1000px);
   -webkit-transform: translateY(-50%) perspective(1000px);
   -moz-transform: translateY(-50%) perspective(1000px);
-  -ms-transform: translateY(-50%) perspective(1000px);
-  -o-transform: translateY(-50%) perspective(1000px);
   margin: 0 auto;
 }
 
@@ -1605,32 +1677,24 @@ button:focus {
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-transform: scaleX(0) translateY(-50%) perspective(1000px);
   -moz-transform: scaleX(0) translateY(-50%) perspective(1000px);
-  -ms-transform: scaleX(0) translateY(-50%) perspective(1000px);
-  -o-transform: scaleX(0) translateY(-50%) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress.step-2:after {
   transform: scaleX(0.5) translateY(-50%) perspective(1000px);
   -webkit-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
   -moz-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
-  -ms-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
-  -o-transform: scaleX(0.5) translateY(-50%) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress.step-3:after {
   transform: scaleX(1) translateY(-50%) perspective(1000px);
   -webkit-transform: scaleX(1) translateY(-50%) perspective(1000px);
   -moz-transform: scaleX(1) translateY(-50%) perspective(1000px);
-  -ms-transform: scaleX(1) translateY(-50%) perspective(1000px);
-  -o-transform: scaleX(1) translateY(-50%) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress.step-4:after {
   transform: scaleX(1.041) translateY(-50%) perspective(1000px);
   -webkit-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
   -moz-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
-  -ms-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
-  -o-transform: scaleX(1.041) translateY(-50%) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar {
@@ -1665,8 +1729,6 @@ button:focus {
   transition: 0.3s ease;
   -webkit-transform: translateX(-50%) perspective(1000px);
   -moz-transform: translateX(-50%) perspective(1000px);
-  -ms-transform: translateX(-50%) perspective(1000px);
-  -o-transform: translateX(-50%) perspective(1000px);
   text-align: right;
   margin-left: 117px;
 }
@@ -1682,8 +1744,6 @@ button:focus {
   transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
   -webkit-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
   -moz-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
-  -ms-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
-  -o-transform: translate3d(0, 0, 0) scale(1) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
@@ -1698,8 +1758,6 @@ button:focus {
   transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
   -webkit-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
   -moz-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
-  -ms-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
-  -o-transform: translate3d(-50%, -50%, 0) scale(0) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar .step.active span, .payment_proceedure_area #checkout-progress .progress-bar .step.active .step-label {
@@ -1710,8 +1768,6 @@ button:focus {
   transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
   -webkit-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
   -moz-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
-  -ms-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
-  -o-transform: translate3d(-50%, -50%, 0) scale(1) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar .step.valid span {
@@ -1719,8 +1775,6 @@ button:focus {
   transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
   -webkit-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
   -moz-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
-  -ms-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
-  -o-transform: translate3d(0, 0, 0) scale(2) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar .step.valid .step-label {
@@ -1743,8 +1797,6 @@ button:focus {
   transition: 0.3s ease;
   -webkit-transform: translate(-50%, -50%) perspective(1000px);
   -moz-transform: translate(-50%, -50%) perspective(1000px);
-  -ms-transform: translate(-50%, -50%) perspective(1000px);
-  -o-transform: translate(-50%, -50%) perspective(1000px);
 }
 
 .payment_proceedure_area #checkout-progress .progress-bar .step.active:after {
@@ -2607,5 +2659,337 @@ button:focus {
   margin-bottom: 6px;
   color: #161616;
   font-weight: 600;
+}
+
+.rms_measurment_area .rms_measurment_box .rms_img {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-image: url(../image/service_1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box {
+  text-align: center;
+  padding: 15px 20px;
+  border: 1px solid #000219;
+  width: 25%;
+  margin-right: 40px;
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .box_icon {
+  margin-bottom: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .box_icon img {
+  max-width: 45px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .box_titel {
+  margin-bottom: 15px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .box_titel h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #000219;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .box_titel span {
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #000219;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .offfer_price span {
+  font-size: 25px;
+  color: #e62435;
+  line-height: 1;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .offer_btn {
+  margin-top: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .offer_btn .default_btn {
+  width: 100%;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_details ul li {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000219;
+  margin-bottom: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .offer_details ul li::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: #e62435;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+  -moz-transform: rotate(45deg) !important;
+}
+
+.rms_measurment_area .rms_measurment_box .service_book_btn {
+  margin-top: 60px;
+}
+
+.rms_measurment_area .rms_measurment_box .service_book_btn .default_btn {
+  padding: 12px 60px;
+}
+
+.rms_measurment_area .more_information_box {
+  padding-top: 60px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_left .titel h5 {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #000219;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_left ul li {
+  display: block;
+  position: relative;
+  padding-left: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000219;
+  margin-bottom: 10px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_left ul li::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: #e62435;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+  -moz-transform: rotate(45deg) !important;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .more_info_img {
+  margin-bottom: 40px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  margin: 0 auto 15px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn span i {
+  margin-right: 15px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn:last-child {
+  margin-bottom: 0;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .pop_img {
+  width: 45%;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul {
+  text-align: center;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li {
+  display: inline-block;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li .btn {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li .btn span i {
+  margin-right: 15px;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li .btn:last-child {
+  margin-bottom: 0;
+}
+
+.team .box {
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.team .box .image {
+  position: relative;
+  height: 100%;
+}
+
+.team .box .image .social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 20;
+  text-decoration: none;
+  opacity: 0;
+  margin-top: 100px;
+  padding: 8px 15px;
+  background: #ffffff;
+  border-radius: 35px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.team .box .image .social-icons i {
+  font-size: 18px;
+  padding: 0 7px;
+  color: #000219;
+}
+
+.team .box .image .social-icons i:hover {
+  color: #e62435;
+}
+
+.team .box .image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00021993;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 15;
+}
+
+.team .box h3 {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.team .box h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #999999;
+  font-weight: 400;
+  margin-top: 5px;
+  padding-bottom: 25px;
+}
+
+.team .box:hover {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+}
+
+.team .box:hover .image .overlay {
+  opacity: 0.85;
+}
+
+.team .box:hover .image .social-icons {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.terms_condition_area .terms_condition_box .titel {
+  margin-bottom: 30px;
+}
+
+.terms_condition_area .terms_condition_box .titel h2 {
+  font-size: 40px;
+  line-height: 1.5;
+  text-transform: capitalize;
+  color: #e62435;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.terms_condition_area .terms_condition_box .conditions ul li {
+  display: block;
+  position: relative;
+  color: #000219;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.terms_condition_area .terms_condition_box .conditions ul li:last-child {
+  margin-bottom: 0;
+}
+
+.terms_condition_area .terms_condition_box .conditions ul li::before {
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: #e62435;
+  top: 50%;
+  left: 0;
+  transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+  -moz-transform: rotate(45deg) !important;
 }
 /*# sourceMappingURL=style.css.map */

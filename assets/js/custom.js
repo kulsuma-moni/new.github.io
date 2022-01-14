@@ -12,6 +12,10 @@
         $('.header_area').removeClass('menu-shrink animated slideInUp');
         }
     });
+        // data-background
+        $("[data-background]").each(function(){
+            $(this).css("background-image", "url("+ $(this).attr("data-background") + ")")
+            });
     // Hero slider js
     $(".hero_slider_box").owlCarousel({
         items:1,
@@ -93,11 +97,6 @@
            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         }
       });
-    // data-background
-    $("[data-background]").each(function(){
-        $(this).css("background-image", "url("+ $(this).attr("data-background") + ")")
-        });
-
 
         $("#order_cn_btn").click(function(){
             $("#appoinment,#status").hide(),
@@ -107,4 +106,6 @@
             $("#order").hide(),
             $("#appoinment , #status").show()
         });
+
+
 })(jQuery);
