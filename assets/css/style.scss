@@ -2360,11 +2360,10 @@ outline:0;
 // RMS MEASERMENT PAGE CSS START
 .rms_measurment_area{
     .rms_measurment_box{
-        .rms_img{
+        .top_img{
             margin-top: 10px;
             margin-bottom: 20px;
             width: 100%;
-            background-image: url(../image/service_1.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -2374,6 +2373,24 @@ outline:0;
             -moz-border-radius: 6px;
             -o-border-radius: 6px;
             -ms-border-radius: 6px;
+        }
+        .photo_graphy_img{
+            background-image: url(../image/service_1.jpg);
+        }
+        .video_graphy_img{
+            background-image: url(../image/service_2.jpg);
+        }
+        .threed_img{
+            background-image: url(../image/service_3.jpg);
+        }
+        .rms_img{
+            background-image: url(../image/service_4.jpg);
+        }
+        .drone_img{
+            background-image: url(../image/service_5.jpg);
+        }
+        .virtual_img{
+            background-image: url(../image/service_6.jpg);
         }
         .product_offer_box{
             display: flex;
