@@ -84,7 +84,7 @@
 		speed: 400,      //numeric value (as mili-seconds) for duration
 		position:true,   //boolean 'true' or 'false'. Set this 'false' if you want to add custom position with your own css
 		left: 15,       //numeric value (as pixels) for position from right. It will work only if the 'position' is set 'true'
-		bottom: 30       //numeric value (as pixels) for position from bottom. It will work only if the 'position' is set 'true'
+		bottom: 40       //numeric value (as pixels) for position from bottom. It will work only if the 'position' is set 'true'
 	});
 
     $('#basic').daterangepicker({
