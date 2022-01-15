@@ -1124,8 +1124,8 @@ button:focus {
   font-size: 22px;
   line-height: 1.5;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, from(#000219), color-stop(53%, #000219), to(#4b5280));
-  background: linear-gradient(90deg, #000219 0%, #000219 53%, #4b5280 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#23495d), color-stop(53%, #23495d), to(#323b75));
+  background: linear-gradient(90deg, #23495d 0%, #23495d 53%, #323b75 100%);
   color: #fff;
   padding: 15px 0;
   border: 1px solid transparent;
