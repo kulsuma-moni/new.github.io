@@ -16,16 +16,16 @@ Default CSS
 =================================================*/
 $font_family_1: 'Lato', sans-serif;
 $font_family_2: 'Open Sans', sans-serif;
-$font_colour_1:#000219;
+$font_colour_1:#23495D;
 $font_colour_2:#4b5280;
-$font_colour_3:#e62435;
+$font_colour_3:#20DE7E;
 $white_colour:#fff;
 
 
 
-$basic_color:#e62435;
+$basic_color:#20DE7E;
 $basic_color_2:#2B6CB0;
-$basic_color_3:#0a152a;
+$basic_color_3:#154158;
 $color1: #4d4d4d;
 $color2: #ffffff;
 $color3: #e7e7e7;
@@ -109,8 +109,6 @@ outline:0;
     -webkit-transition: color 0.4s ease-in-out;
     -moz-transition: color 0.4s ease-in-out;
     transform: skewX(-22deg) skewY(0deg);
-    -webkit-transform: skewX(-22deg) skewY(0deg);
-    -moz-transform: skewX(-22deg) skewY(0deg);
     &::before{
         content: '';
         z-index: -1;
@@ -142,7 +140,7 @@ outline:0;
 .section_title {
     margin-bottom: 60px;
     h2 {
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,2,25,1) 53%, rgba(75,82,128,1) 100%); 
+        background: linear-gradient(90deg, rgb(35, 73, 93) 0%, rgb(35, 73, 93) 53%, rgba(75,82,128,1) 100%); 
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 40px;
@@ -389,7 +387,7 @@ outline:0;
        &::after{
             position: absolute;
             content: '';
-            background: #000219c5;
+            background: #00021bb8;
             top: 0;
             left: 0;
             width: 100%;
@@ -408,12 +406,16 @@ outline:0;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         .service_img{
+            overflow: hidden;
             img{
                 width: 100%;
                 height: 200px;
                 border-radius: 10px 10px 0px 0px;
                 -webkit-border-radius: 10px 10px 0px 0px;
                 -moz-border-radius: 10px 10px 0px 0px;
+                transition:all 0.6s ease-in-out;
+                -webkit-transition:all 0.6s ease-in-out;
+                -moz-transition:all 0.6s ease-in-out;
             }
         }
         .service_ctn{
@@ -487,6 +489,15 @@ outline:0;
                             -moz-transform: translateX(5px);
                         }
                     }
+                }
+            }
+        }
+        &:hover{
+            .service_img{
+                img{
+                    transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
                 }
             }
         }
@@ -818,7 +829,7 @@ outline:0;
 // CONTACT AREA CSS END
 // COPYRIGHT AREA CSS START
 .copyright_area{
-    background: $font_colour_1;
+    background: $basic_color_3;
     padding: 10px 0;
     .copy_right{
         h4{
@@ -840,7 +851,7 @@ outline:0;
     margin-top: 60px;
     padding: 40px 0;
     position: relative;
-    background:$font_colour_1;
+    background:$font_colour_3;
     p {
         font-size: 16px;
         color: $white_colour;
@@ -957,7 +968,7 @@ outline:0;
     .to-top{
         i{
             font-size: 40px;
-            color: $font_colour_3;
+            color:$basic_color_3;
         }
     
     }
@@ -1140,7 +1151,7 @@ outline:0;
     &::after{
         position: absolute;
         content: '';
-        background: #000219c5;
+        background: #00021bb8;
         top: 0;
         left: 0;
         width: 100%;
