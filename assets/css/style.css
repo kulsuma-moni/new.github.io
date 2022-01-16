@@ -36,7 +36,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", sans-serif;
-  color: #23495D;
+  color: #224958;
   font-weight: 700;
 }
 
@@ -112,7 +112,7 @@ button:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #20DE7E;
+  background-color: #14df79;
   -webkit-transform-origin: center right;
           transform-origin: center right;
   -webkit-transform: scaleX(0);
@@ -136,7 +136,7 @@ button:focus {
 }
 
 .bok_btn {
-  background-color: #20DE7E;
+  background-color: #14df79;
 }
 
 .bok_btn::before {
@@ -268,7 +268,7 @@ button:focus {
   font-size: 14px;
   line-height: 1;
   display: block;
-  color: #23495D;
+  color: #224958;
   text-transform: capitalize;
   transition: .3s;
   -webkit-transition: .3s;
@@ -276,11 +276,11 @@ button:focus {
 }
 
 .header_area .menu ul li .sub_menu li a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .header_area .menu ul li .sub_menu li a.active {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .header_area .menu ul li .sub_menu::before {
@@ -288,7 +288,7 @@ button:focus {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: #20DE7E;
+  background: #14df79;
   top: 0;
   left: 0;
 }
@@ -344,19 +344,19 @@ button:focus {
 }
 
 .header_area .user_btn .dropdown-menu li a {
-  color: #23495D;
+  color: #224958;
   background: transparent;
   font-size: 14px;
   line-height: 1;
 }
 
 .header_area .user_btn .dropdown-menu li a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .menu-shrink {
   position: fixed !important;
-  background: #23495D !important;
+  background: #224958 !important;
   color: #fff;
   width: 100%;
   padding: 10px 0;
@@ -395,7 +395,7 @@ button:focus {
 .hero_area .video_content span {
   font-size: 16px;
   line-height: 1.4;
-  color: #20DE7E;
+  color: #14df79;
   margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -461,7 +461,7 @@ button:focus {
   font-size: 20px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -470,7 +470,7 @@ button:focus {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.4;
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .service_area .service_box .service_ctn .service_detail {
@@ -483,7 +483,7 @@ button:focus {
 .service_area .service_box .service_ctn .service_detail ul li {
   display: block;
   position: relative;
-  color: #23495D;
+  color: #224958;
   font-weight: 500;
   font-size: 14px;
   padding-left: 20px;
@@ -499,7 +499,7 @@ button:focus {
   content: '';
   width: 7px;
   height: 7px;
-  background: #23495D;
+  background: #224958;
   top: 50%;
   left: 0;
   transform: rotate(45deg) !important;
@@ -511,7 +511,7 @@ button:focus {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   font-weight: 600;
   padding: 0;
 }
@@ -523,7 +523,7 @@ button:focus {
 }
 
 .service_area .service_box .service_ctn .service_btn .btn:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .service_area .service_box .service_ctn .service_btn .btn:hover i {
@@ -554,7 +554,7 @@ button:focus {
 .approach_area .app_head p {
   font-size: 15px;
   line-height: 1.4;
-  color: #23495D;
+  color: #224958;
   font-weight: 500;
   text-align: left;
   width: 70%;
@@ -593,7 +593,7 @@ button:focus {
 }
 
 .approach_area .approch_box .approch_icon i {
-  color: #20DE7E;
+  color: #14df79;
   font-size: 26px;
 }
 
@@ -602,14 +602,14 @@ button:focus {
   font-size: 22px;
   line-height: 33px;
   letter-spacing: -0.01em;
-  color: #23495D;
+  color: #224958;
 }
 
 .approach_area .approch_box .approch_details p {
   font-weight: 500;
   font-size: 14px;
   line-height: 25px;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 4px;
   position: relative;
   padding-left: 15px;
@@ -620,7 +620,7 @@ button:focus {
   content: '';
   width: 7px;
   height: 7px;
-  background: #20DE7E;
+  background: #14df79;
   top: 50%;
   left: 0;
   transform: rotate(45deg) !important;
@@ -644,8 +644,8 @@ button:focus {
 
 .testimonial_area .testimonial_content_wrp .testimonial .testimonial-content {
   padding: 40px 30px 40px;
-  border-top: 1px solid #23495D;
-  border-left: 1px solid #23495D;
+  border-top: 1px solid #224958;
+  border-left: 1px solid #224958;
   position: relative;
   margin-bottom: 50px;
 }
@@ -678,7 +678,7 @@ button:focus {
   left: 0;
   width: 50%;
   height: 1px;
-  background-color: #23495D;
+  background-color: #224958;
 }
 
 .testimonial_area .testimonial_content_wrp .testimonial .testimonial-info {
@@ -690,7 +690,7 @@ button:focus {
   position: absolute;
   top: -50px;
   left: 50%;
-  background-color: #23495D;
+  background-color: #224958;
   width: 1px;
   height: 20px;
 }
@@ -700,7 +700,7 @@ button:focus {
   position: absolute;
   top: -70px;
   left: 50%;
-  background-color: #23495D;
+  background-color: #224958;
   width: 2px;
   height: 40px;
   transform: skewX(-45deg);
@@ -731,7 +731,7 @@ button:focus {
 .testimonial_area .testimonial_content_wrp .testimonial .testimonial-title {
   display: inline-block;
   vertical-align: middle;
-  color: #23495D;
+  color: #224958;
   font-size: 18px;
   text-transform: capitalize;
   font-weight: 700;
@@ -755,7 +755,7 @@ button:focus {
   height: 15px;
   width: 15px;
   display: block;
-  background-color: #23495D;
+  background-color: #224958;
   opacity: 0.8;
   border-radius: 0;
   transform: rotate(45deg) !important;
@@ -765,11 +765,11 @@ button:focus {
 }
 
 .testimonial_area .testimonial_content_wrp .owl-dots .owl-dot span:hover {
-  background-color: #20DE7E;
+  background-color: #14df79;
 }
 
 .testimonial_area .testimonial_content_wrp .owl-dots .owl-dot.active span {
-  background-color: #20DE7E;
+  background-color: #14df79;
 }
 
 .contact_area .contact_link ul li {
@@ -782,7 +782,7 @@ button:focus {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  color: #23495D;
+  color: #224958;
   text-transform: capitalize;
   line-height: 1.5;
 }
@@ -796,7 +796,7 @@ button:focus {
 }
 
 .contact_area .contact_link ul li h6 a {
-  color: #23495D;
+  color: #224958;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,13 +807,13 @@ button:focus {
 }
 
 .contact_area .contact_link ul li h6 a i {
-  color: #20DE7E;
+  color: #14df79;
   padding-right: 20px;
   opacity: .8;
 }
 
 .contact_area .contact_link ul li h6 a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .contact_area .contact_link ul li h6 a:hover i {
@@ -824,7 +824,7 @@ button:focus {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   margin: 20px 0;
   text-transform: capitalize;
 }
@@ -833,12 +833,12 @@ button:focus {
   font-size: 20px;
   line-height: 1.5;
   padding-right: 12px;
-  color: #23495D;
+  color: #224958;
   font-weight: 700;
 }
 
 .contact_area .social_media ul li a i:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .contact_area .contact_form .form input {
@@ -849,7 +849,7 @@ button:focus {
 
 .contact_area .contact_form .form input:focus {
   outline: none !important;
-  border: 1px solid #23495D;
+  border: 1px solid #224958;
 }
 
 .contact_area .contact_form .form input::-webkit-input-placeholder {
@@ -887,7 +887,7 @@ button:focus {
 
 .contact_area .contact_form .form textarea:focus {
   outline: none !important;
-  border: 1px solid #23495D;
+  border: 1px solid #224958;
 }
 
 .contact_area .contact_form .form textarea::-webkit-input-placeholder {
@@ -923,7 +923,7 @@ button:focus {
 }
 
 .copyright_area {
-  background: #154158;
+  background: #224958;
   padding: 10px 0;
 }
 
@@ -937,14 +937,14 @@ button:focus {
 }
 
 .copyright_area .copy_right h4 a {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .footer_area {
   margin-top: 60px;
   padding: 40px 0;
   position: relative;
-  background: #20DE7E;
+  background: #49E196;
   /* waves */
 }
 
@@ -1032,7 +1032,7 @@ button:focus {
 }
 
 .footer_area .single_footer_widget .footer_links_list li a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .footer_area .ocean {
@@ -1053,9 +1053,10 @@ button:focus {
   height: 100%;
   -webkit-animation: wave 10s -3s linear infinite;
           animation: wave 10s -3s linear infinite;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   opacity: 0.8;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
 }
 
 .footer_area .wave:nth-of-type(2) {
@@ -1101,7 +1102,7 @@ button:focus {
 
 .to-top i {
   font-size: 40px;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area {
@@ -1136,7 +1137,7 @@ button:focus {
 
 .log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link.active {
   background: transparent;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box {
@@ -1157,32 +1158,32 @@ button:focus {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .form-group input:-ms-input-placeholder {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .form-group input::-ms-input-placeholder {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .form-group input::placeholder {
   text-transform: capitalize;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .form-group input:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
   font-size: 16px;
   line-height: 1.5;
   color: #4d4d4d;
@@ -1223,7 +1224,7 @@ button:focus {
   text-transform: capitalize;
   font-weight: 600;
   line-height: 20px;
-  background: #23495D;
+  background: #224958;
   padding: 6px 40px;
   font-size: 18px;
   color: #fff;
@@ -1245,19 +1246,19 @@ button:focus {
 .log_reg_area .log_reg_box .lr_tab_box form .account_creat span {
   font-size: 14px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   font-weight: 400;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .account_creat a {
   font-size: 14px;
   line-height: 1.5;
-  color: #20DE7E;
+  color: #14df79;
   font-weight: 500;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .account_creat a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .signin_account {
@@ -1270,13 +1271,13 @@ button:focus {
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .signin_account p a {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box form .signin_with p {
   font-size: 14px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   font-weight: 400;
   margin-bottom: 8px;
 }
@@ -1372,7 +1373,7 @@ button:focus {
   text-transform: capitalize;
   font-size: 20px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 0;
 }
 
@@ -1390,7 +1391,7 @@ button:focus {
   display: flex;
   font-size: 14px;
   font-weight: 600;
-  color: #23495D;
+  color: #224958;
   width: 66%;
   margin: 0 15px 10px;
   line-height: 1.5;
@@ -1422,7 +1423,7 @@ button:focus {
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.5;
-  color: #23495D;
+  color: #224958;
   text-transform: capitalize;
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
@@ -1433,7 +1434,7 @@ button:focus {
 }
 
 .booking_process_area .client_profile_box .cl_pro_bottom ul li a {
-  color: #23495D;
+  color: #224958;
 }
 
 .booking_process_area .client_profile_box .cl_pro_bottom ul li a:hover {
@@ -1459,7 +1460,7 @@ button:focus {
 }
 
 .booking_process_area .profile_detail_cl .booking_status a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right {
@@ -1477,7 +1478,7 @@ button:focus {
   font-size: 20px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 8px;
   letter-spacing: 1px;
 }
@@ -1485,13 +1486,13 @@ button:focus {
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name p {
   font-weight: 500;
   font-size: 14px;
-  color: #23495D;
+  color: #224958;
   line-height: 1.5;
   text-transform: capitalize;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .product_name p span {
-  color: #20DE7E;
+  color: #14df79;
   font-size: 30px;
 }
 
@@ -1504,7 +1505,7 @@ button:focus {
   font-size: 18px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 4px;
   text-align: left;
 }
@@ -1512,7 +1513,7 @@ button:focus {
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .selected_date span {
   font-weight: 500;
   font-size: 14px;
-  color: #23495D;
+  color: #224958;
   line-height: 1.5;
   text-transform: capitalize;
   opacity: .7;
@@ -1586,7 +1587,7 @@ button:focus {
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li a {
-  color: #23495D;
+  color: #224958;
   border: 1px solid #ccc;
   background: #ccc;
   padding: 4px 8px;
@@ -1871,13 +1872,13 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process__stepint p a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process__stepint::before {
   content: '';
   position: absolute;
-  border-left: 4px solid #20DE7E;
+  border-left: 4px solid #14df79;
   top: 0%;
   left: 0%;
   width: 2px;
@@ -1888,7 +1889,7 @@ button:focus {
   font-size: 22px;
   text-transform: capitalize;
   line-height: 1.6;
-  color: #23495D;
+  color: #224958;
   font-weight: 700;
   letter-spacing: normal;
   margin-bottom: 20px;
@@ -1913,7 +1914,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start input:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process_start input::-webkit-input-placeholder {
@@ -1957,7 +1958,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start select:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process_start .condition input[type="checkbox"] {
@@ -2005,7 +2006,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #guest_information input:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #guest_information input::-webkit-input-placeholder {
@@ -2049,7 +2050,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #guest_information select:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #sp_request {
@@ -2061,7 +2062,7 @@ button:focus {
   font-size: 22px;
   text-transform: capitalize;
   line-height: 1.6;
-  color: #23495D;
+  color: #224958;
   font-weight: 700;
   letter-spacing: normal;
 }
@@ -2082,7 +2083,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #sp_request textarea:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_1 .process_start #sp_request textarea::-webkit-input-placeholder {
@@ -2147,7 +2148,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_1 .process_start .condition_agree span a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .payment_proceedure_area #boking_step_2 .payment_confirmation .ann {
@@ -2176,7 +2177,7 @@ button:focus {
 .payment_proceedure_area #boking_step_2 .payment_confirmation .ann::before {
   content: '';
   position: absolute;
-  border-left: 4px solid #20DE7E;
+  border-left: 4px solid #14df79;
   top: 0%;
   left: 0%;
   width: 2px;
@@ -2228,7 +2229,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_2 .payment_confirmation input:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_2 .payment_confirmation input::-webkit-input-placeholder {
@@ -2335,7 +2336,7 @@ button:focus {
 }
 
 .payment_proceedure_area #boking_step_3 .booking_final input:focus {
-  border: 1px solid #20DE7E;
+  border: 1px solid #14df79;
 }
 
 .payment_proceedure_area #boking_step_3 .booking_final input::-webkit-input-placeholder {
@@ -2659,7 +2660,7 @@ button:focus {
 }
 
 .payment_proceedure_area .booking_details_right .booking_info .booking_cost .cancel p a:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .payment_proceedure_area .booking_details_right .booking_info .booking_cost .bok_fc {
@@ -2728,7 +2729,7 @@ button:focus {
 .rms_measurment_area .rms_measurment_box .product_offer_box .offer_box {
   text-align: center;
   padding: 15px 20px;
-  border: 1px solid #23495D;
+  border: 1px solid #224958;
   width: 25%;
   margin-right: 40px;
   border-radius: 3%;
@@ -2752,7 +2753,7 @@ button:focus {
   font-size: 16px;
   line-height: 1.4;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 10px;
   font-weight: 700;
   margin-bottom: 0px;
@@ -2762,14 +2763,14 @@ button:focus {
   font-size: 14px;
   line-height: 1.4;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
 .rms_measurment_area .rms_measurment_box .product_offer_box .offer_box .offfer_price span {
   font-size: 25px;
-  color: #20DE7E;
+  color: #14df79;
   line-height: 1;
 }
 
@@ -2787,7 +2788,7 @@ button:focus {
   padding-left: 16px;
   font-size: 16px;
   font-weight: 500;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 10px;
 }
 
@@ -2796,7 +2797,7 @@ button:focus {
   content: '';
   width: 7px;
   height: 7px;
-  background: #20DE7E;
+  background: #14df79;
   top: 50%;
   left: 0;
   transform: rotate(45deg) !important;
@@ -2821,7 +2822,7 @@ button:focus {
   font-weight: 600;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -2832,7 +2833,7 @@ button:focus {
   padding-left: 16px;
   font-size: 16px;
   font-weight: 500;
-  color: #23495D;
+  color: #224958;
   margin-bottom: 10px;
 }
 
@@ -2841,7 +2842,7 @@ button:focus {
   content: '';
   width: 7px;
   height: 7px;
-  background: #20DE7E;
+  background: #14df79;
   top: 50%;
   left: 0;
   transform: rotate(45deg) !important;
@@ -2938,11 +2939,11 @@ button:focus {
 .team .box .image .social-icons i {
   font-size: 18px;
   padding: 0 7px;
-  color: #23495D;
+  color: #224958;
 }
 
 .team .box .image .social-icons i:hover {
-  color: #20DE7E;
+  color: #14df79;
 }
 
 .team .box .image .overlay {
@@ -2998,7 +2999,7 @@ button:focus {
   font-size: 40px;
   line-height: 1.5;
   text-transform: capitalize;
-  color: #20DE7E;
+  color: #14df79;
   font-weight: 700;
   margin-bottom: 0;
   text-align: center;
@@ -3007,7 +3008,7 @@ button:focus {
 .terms_condition_area .terms_condition_box .conditions ul li {
   display: block;
   position: relative;
-  color: #23495D;
+  color: #224958;
   font-weight: 500;
   font-size: 16px;
   padding-left: 20px;
@@ -3023,7 +3024,7 @@ button:focus {
   content: '';
   width: 7px;
   height: 7px;
-  background: #20DE7E;
+  background: #14df79;
   top: 50%;
   left: 0;
   transform: rotate(45deg) !important;

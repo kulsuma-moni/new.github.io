@@ -16,14 +16,14 @@ Default CSS
 =================================================*/
 $font_family_1: 'Lato', sans-serif;
 $font_family_2: 'Open Sans', sans-serif;
-$font_colour_1:#23495D;
+$font_colour_1:#224958;
 $font_colour_2:#4b5280;
-$font_colour_3:#20DE7E;
+$font_colour_3:#14df79;
 $white_colour:#fff;
 
 
 
-$basic_color:#20DE7E;
+$basic_color:#14df79;
 $basic_color_2:#2B6CB0;
 $basic_color_3:#154158;
 $color1: #4d4d4d;
@@ -832,7 +832,7 @@ outline:0;
 // CONTACT AREA CSS END
 // COPYRIGHT AREA CSS START
 .copyright_area{
-    background: $basic_color_3;
+    background: $font_colour_1;
     padding: 10px 0;
     .copy_right{
         h4{
@@ -854,7 +854,7 @@ outline:0;
     margin-top: 60px;
     padding: 40px 0;
     position: relative;
-    background:#20DE7E;
+    background:#49E196;
     p {
         font-size: 16px;
         color: $white_colour;
@@ -947,7 +947,9 @@ outline:0;
     animation: wave 10s -3s linear infinite;
     transform: translate3d(0, 0, 0);
     opacity: 0.8;
-  }
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
   
   .wave:nth-of-type(2) {
     bottom: 0;
