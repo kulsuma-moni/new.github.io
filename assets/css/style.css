@@ -475,6 +475,9 @@ button:focus {
 
 .service_area .service_box .service_ctn .service_detail {
   margin-bottom: 20px;
+  padding-left: 4px;
+  height: 100px;
+  overflow: hidden;
 }
 
 .service_area .service_box .service_ctn .service_detail ul li {
