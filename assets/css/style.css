@@ -942,14 +942,14 @@ button:focus {
 
 .footer_area {
   margin-top: 60px;
-  padding: 40px 0;
+  padding: 110px 0 40px;
   position: relative;
   background: #4A6873;
 }
 
 .footer_area .footer_top img {
   position: absolute;
-  top: -114px;
+  top: 0;
   left: 0;
 }
 
