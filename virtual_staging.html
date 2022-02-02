@@ -17,8 +17,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!--=== Responsive Menu===-->
     <link rel="stylesheet" href="assets/css/plugin/meanmenu.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-
     <!--=== Owl carousel ===-->
     <link rel="stylesheet" href="assets/css/plugin/owl.carousel.min.css"/>
     <link rel="stylesheet" href="assets/css/plugin/owl.theme.default.min.css"/>
@@ -43,12 +41,12 @@
                         <ul>
                             <li><a href="#">Service <i class="far fa-angle-down"></i></a>
                                 <ul class="sub_menu">
-                                    <li><a href="photography.html" class="active">Photography</a></li>
+                                    <li><a href="photography.html">Photography</a></li>
                                     <li><a href="videography.html">Videography</a></li>
                                     <li><a href="threed_tour.html">3D virtual tour</a></li>
                                     <li><a href="rms_measurments.html">RMS Measurements</a></li>
                                     <li><a href="drone_photo.html">Drone Photo/Videography.</a></li>
-                                    <li><a href="virtual_staging.html">Virtual Staging</a></li>
+                                    <li><a href="virtual_staging.html" class="active">Virtual Staging</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">company <i class="far fa-angle-down"></i></a>
@@ -70,7 +68,7 @@
     <section class="inner_banner_area section_padding" data-background="assets/image/inner_banner.png">
         <div class="container">
             <div class="inner_titel text-center">
-                <h2>Photography</h2>
+                <h2>Virtual Staging</h2>
             </div>
         </div>
     </section>
@@ -81,17 +79,18 @@
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mx-auto">
                     <div class="rms_measurment_box">
-                        <div class="top_img photo_graphy_img"></div>
+                        <div class="top_img virtual_img">
+                        </div>
                         <div class="product_offer_box">
                             <div class="offer_box">
                                 <div class="box_icon">
                                     <img src="assets/image/tape-measure.png" alt="icon image">
                                 </div>
                                 <div class="box_titel">
-                                    <h5>Photography</h5>
+                                    <h5>Virtual staging</h5>
                                 </div>
                                 <div class="offfer_price">
-                                    <span>99$</span>
+                                    <span>20$</span>
                                 </div>
                                 <div class="offer_btn">
                                     <a href="#" class="btn default_btn">book now</a>
@@ -157,23 +156,9 @@
                             <div class="more_info_img">
                                 <img src="assets/image/3169208.png" alt="">
                             </div>
-                            <div class="info_btns hdr_photo_btn">
-                                <a href="#pop_up_gallery" class="btn default_btn pop_img" target="blank"><span><i class="fas fa-external-link-alt"></i></span> <span>Sample HDR Photos</span></a>
-                                <div id="pop_up_gallery">
-                                    <a href="assets/image/pop_1.jpg"></a>
-                                    <a href="assets/image/pop_2.jpg"></a>
-                                    <a href="assets/image/pop_3.jpg"></a>
-                                    <a href="assets/image/pop_4.jpg"></a>
-                                    <a href="assets/image/pop_1.jpg"></a>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#" class="btn default_btn" target="blank"><span><i class="fas fa-external-link-alt"></i></span> <span>Sample Blue Sky</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="btn default_btn" target="blank"><span><i class="fas fa-external-link-alt"></i></span><span>Sample Twilight</span></a>
-                                    </li>
-                                </ul>
+                            <div class="info_btns">
+                                <a href="assets/pdf/ListSimple_Sample_Measurement_Report_Calgary.pdf" class="btn default_btn" target="blank"><span><i class="fas fa-external-link-alt"></i></span> <span>See Sample Report -Imperial</span></a>
+                                <a href="assets//pdf/ListSimple_Sample_Measurement_Report_Calgary.pdf" class="btn default_btn" target="blank"><span><i class="fas fa-external-link-alt"></i></span><span> See Sample Report -Metric</span></a>
                             </div>
                         </div>
                     </div>
@@ -449,29 +434,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="assets/js/plugin/jquery.meanmenu.min.js"></script>
     <script src="assets/js/plugin/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <!--=== to top  js===-->
     <script src="assets/js/plugin/jquery.toTop.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script>
-            $(document).ready(function() {
-
-            $('a.btn.default_btn.pop_img').on('click', function(event) {
-                event.preventDefault();
-                
-                var gallery = $(this).attr('href');
-
-                $(gallery).magnificPopup({
-            delegate: 'a',
-                    type:'image',
-                    gallery: {
-                        enabled: true
-                    }
-                }).magnificPopup('open');
-            });
-
-            });
-    </script>
 
 </body>
 </html>
