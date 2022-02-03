@@ -78,12 +78,9 @@
     margin-bottom: 30px;
   }
   .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn {
-    width: 80%;
+    width: 100%;
     margin: 0 auto 15px;
     font-size: 16px;
-  }
-  .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn span i {
-    margin-right: 0px;
   }
   .footer_area {
     padding: 50px 0 40px;
@@ -94,6 +91,55 @@
   }
   .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .pop_img span i {
     margin-right: 15px;
+  }
+  .copyright_area .copy_right h4 {
+    font-size: 12px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box {
+    overflow-x: auto;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day {
+    width: 700px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date {
+    width: 700px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start #sp_request textarea {
+    width: 100%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step::after {
+    right: 14%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 40px;
+    white-space: break-spaces;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
+    right: 32%;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .payment .card_vie {
+    margin-top: 40px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon {
+    top: 41%;
+  }
+  .payment_proceedure_area .booking_details_right {
+    margin-top: 40px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start .form-group {
+    margin-bottom: 15px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start .condition {
+    margin-top: 15px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .form-group {
+    margin-bottom: 15px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree {
+    margin-bottom: 10px;
+  }
+  .payment_proceedure_area #boking_step_3 .booking_final input {
+    width: 100%;
   }
 }
 
@@ -125,6 +171,12 @@
   }
   .mean-last a {
     text-align: center !important;
+  }
+  .btn.default_btn.bok_btn {
+    padding: 7px 0;
+    margin: 10px 20px 0 30px;
+    width: 30%;
+    font-size: 16px;
   }
   .hero_area .video_content {
     width: 100%;
@@ -177,6 +229,51 @@
     width: 52%;
     margin-right: 30px;
   }
+  .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn {
+    font-size: 16px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box {
+    overflow-x: auto;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day {
+    width: 700px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date {
+    width: 700px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start #sp_request textarea {
+    width: 100%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step::after {
+    right: 29%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 65px;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
+    right: 40%;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .payment .card_vie {
+    margin-top: 40px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon {
+    top: 41%;
+  }
+  .payment_proceedure_area .booking_details_right {
+    margin-top: 40px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start .form-group {
+    margin-bottom: 15px;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start .condition {
+    margin-top: 15px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .form-group {
+    margin-bottom: 15px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree {
+    margin-bottom: 10px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -207,6 +304,12 @@
   }
   .mean-last a {
     text-align: center !important;
+  }
+  .btn.default_btn.bok_btn {
+    padding: 7px 0;
+    margin: 10px 20px 0 30px;
+    width: 30%;
+    font-size: 16px;
   }
   .hero_area .video_content {
     width: 80%;
@@ -240,8 +343,49 @@
     width: 85%;
     font-size: 16px;
   }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li {
+    width: 80%;
+    margin: 0 auto 15px;
+  }
   .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn span i {
     margin-right: 8px;
+  }
+  .booking_process_area .client_profile_box {
+    width: 50%;
+    margin: 0 auto 40px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .right_arrow {
+    width: 1%;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .right_arrow i {
+    font-size: 12px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .left_arrow {
+    width: 1%;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .left_arrow i {
+    font-size: 12px;
+  }
+  .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li {
+    width: 14%;
+  }
+  .payment_proceedure_area #boking_step_1 .process_start #sp_request textarea {
+    width: 100%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step::after {
+    right: 27%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 55px;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
+    right: 38%;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .payment .card_vie {
+    margin-top: 40px;
+  }
+  .payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon {
+    top: 41%;
   }
 }
 
@@ -262,6 +406,18 @@
   }
   .hero_area .video_content h1 {
     font-size: 40px;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn {
+    width: 70%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step::after {
+    right: 30%;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .step-label {
+    margin-left: 70px;
+  }
+  .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
+    right: 40%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

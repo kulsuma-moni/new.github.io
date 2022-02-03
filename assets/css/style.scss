@@ -855,11 +855,13 @@ outline:0;
     padding: 110px 0 40px;
     position: relative;
     background: #4A6873;
+    z-index:0;
     .footer_top{
         img{
             position: absolute;
             top:0;
             left: 0;
+            z-index: -1;
         }
     }
     p {
@@ -1313,6 +1315,7 @@ outline:0;
                         padding:0 0px 0 30px;
                         height: 45px;
                         cursor: pointer;
+                        font-size: 14px;
                         &:focus{
                             border: 1px solid $font_colour_2;
                             line-height: 1.5;
@@ -1329,6 +1332,7 @@ outline:0;
                         position: absolute;
                         right: 2%;
                         top: 35%;
+                        font-size: 14px;
                     }
                 }
             }
@@ -1339,22 +1343,37 @@ outline:0;
                             width: 2%;
                             cursor: pointer;
                             margin-top: 15px;
+                            i{
+                                font-size: 14px;
+                            }
                         }
                         .right_arrow{
                             width: 2%;
                             cursor: pointer;
                             margin-top: 15px;
+                            i{
+                                font-size: 14px;
+                            }
                         }
                         li{
                             float: left;
                             width: 13%;
                             text-align: center;
                             text-transform: capitalize;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
                             p{
-                                font-size: 14px;
+                                font-size: 16px;
                                 line-height: 1.5;
                                 margin-bottom: 5px;
                                 font-weight: 700;
+                            }
+                            .date{
+                                font-size: 14px;
+                                line-height: 1.5;
+                                margin-bottom: 5px;
+                                font-weight: 500;
                             }
                         }
                     }
@@ -1364,14 +1383,19 @@ outline:0;
                     ul{
                         li{
                             text-align: center;
-                            width: 13.5%;
-                            float: left;
-                            margin-bottom: 20px;
+                            width: 13%;
+                            padding-right: 5px;
+                            padding-left: 5px;
+                            
                             a{
                                 color: $font_colour_1;
                                 border: 1px solid #ccc;
-                                background: #ccc;
-                                padding: 4px 8px;
+                                background: #cccccc;
+                                padding: 4px 5px;
+                                margin-bottom: 10px;
+                                position: relative;
+                                display: block;
+                                text-align: center;
                                 &:hover{
                                     background: transparent;
                                     border: 1px solid #ccc;

@@ -6,7 +6,7 @@
 
 	// Sticky Menu
 	$(window).on('scroll', function() {
-        if ($(this).scrollTop() > 200){
+        if ($(this).scrollTop() > 10){
         $('.header_area').addClass('menu-shrink animated slideInDown');
         } else {
         $('.header_area').removeClass('menu-shrink animated slideInUp');

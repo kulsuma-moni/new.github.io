@@ -945,12 +945,14 @@ button:focus {
   padding: 110px 0 40px;
   position: relative;
   background: #4A6873;
+  z-index: 0;
 }
 
 .footer_area .footer_top img {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .footer_area p {
@@ -1469,6 +1471,7 @@ button:focus {
   padding: 0 0px 0 30px;
   height: 45px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .date_celender_box .calender input:focus {
@@ -1487,6 +1490,7 @@ button:focus {
   position: absolute;
   right: 2%;
   top: 35%;
+  font-size: 14px;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .left_arrow {
@@ -1495,10 +1499,18 @@ button:focus {
   margin-top: 15px;
 }
 
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .left_arrow i {
+  font-size: 14px;
+}
+
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .right_arrow {
   width: 2%;
   cursor: pointer;
   margin-top: 15px;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul .right_arrow i {
+  font-size: 14px;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li {
@@ -1506,13 +1518,30 @@ button:focus {
   width: 13%;
   text-align: center;
   text-transform: capitalize;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin-bottom: 5px;
   font-weight: 700;
+}
+
+.booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appointment_day ul li .date {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+  font-weight: 500;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date {
@@ -1521,16 +1550,20 @@ button:focus {
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li {
   text-align: center;
-  width: 13.5%;
-  float: left;
-  margin-bottom: 20px;
+  width: 13%;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li a {
   color: #224958;
   border: 1px solid #ccc;
-  background: #ccc;
-  padding: 4px 8px;
+  background: #cccccc;
+  padding: 4px 5px;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  text-align: center;
 }
 
 .booking_process_area .profile_detail_cl .cr_booking_proceedure_right .appointment_box .appoinment_date ul li a:hover {
