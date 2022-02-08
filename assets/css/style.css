@@ -94,14 +94,12 @@ button:focus {
   border: none;
   background-color: #154158;
   text-transform: capitalize;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   transition: color 0.4s ease-in-out;
   -webkit-transition: color 0.4s ease-in-out;
   -moz-transition: color 0.4s ease-in-out;
-  -webkit-transform: skewX(-22deg) skewY(0deg);
-          transform: skewX(-22deg) skewY(0deg);
 }
 
 .default_btn::before {
@@ -121,6 +119,9 @@ button:focus {
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 
 .default_btn:hover {
@@ -536,6 +537,10 @@ button:focus {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
+}
+
+.service_area .combo_offer {
+  margin-top: 30px;
 }
 
 .service_area .service_book_btn {
