@@ -645,6 +645,7 @@ button:focus {
   background-color: #fff;
   text-align: center;
   margin-right: 40px;
+  margin-bottom: 50px;
 }
 
 .testimonial_area .testimonial_content_wrp .testimonial .testimonial-content {
@@ -724,7 +725,7 @@ button:focus {
   -webkit-box-shadow: 1px 1px 5px 2px #3737377d;
           box-shadow: 1px 1px 5px 2px #3737377d;
   padding: 6px;
-  margin-bottom: 20px;
+  margin-bottom: -20px;
 }
 
 .testimonial_area .testimonial_content_wrp .testimonial .pic img {
@@ -750,10 +751,8 @@ button:focus {
 }
 
 .testimonial_area .testimonial_content_wrp .owl-dots {
-  position: absolute;
-  bottom: -20%;
-  left: 0;
-  right: 0;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .testimonial_area .testimonial_content_wrp .owl-dots .owl-dot span {

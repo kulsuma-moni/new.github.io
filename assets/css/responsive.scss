@@ -144,6 +144,9 @@
   .payment_proceedure_area #boking_step_3 .booking_final input {
     width: 100%;
   }
+  .testimonial_area .testimonial_content_wrp .owl-dots {
+    width: 100%;
+  }
 }
 @media (min-width: 576px) and(max-width:767px){
   .menu-shrink {
@@ -277,6 +280,9 @@
   }
   .payment_proceedure_area #boking_step_2 .payment_confirmation .condition_agree {
     margin-bottom: 10px;
+  }
+  .testimonial_area .testimonial_content_wrp .owl-dots {
+    width: 100%;
   }
 }
 @media (min-width: 768px) and(max-width:991px){
@@ -424,4 +430,16 @@
     .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
       right: 40%;
     }
+}
+
+@media (min-width: 320px) and(max-width:575px){
+  .testimonial_area .testimonial_content_wrp .owl-dots {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) and(max-width:767px){
+  .testimonial_area .testimonial_content_wrp .owl-dots {
+    width: 100%;
+  }
 }
