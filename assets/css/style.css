@@ -1074,16 +1074,14 @@ button:focus {
   font-size: 22px;
   line-height: 1.5;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, from(#23495d), color-stop(53%, #23495d), to(#323b75));
-  background: linear-gradient(90deg, #23495d 0%, #23495d 53%, #323b75 100%);
-  color: #fff;
+  background: transparent;
+  color: #224958;
   padding: 15px 0;
   border: 1px solid transparent;
 }
 
 .log_reg_area .log_reg_box nav .nav.nav-tabs .nav-link.active {
-  background: transparent;
-  color: #224958;
+  color: #14df79;
 }
 
 .log_reg_area .log_reg_box .lr_tab_box {

@@ -973,13 +973,12 @@ outline:0;
                 font-size: 22px;
                 line-height: 1.5;
                 font-weight: 700;
-                background: linear-gradient(90deg, rgb(35, 73, 93) 0%, rgb(35, 73, 93) 53%, rgb(50, 59, 117) 100%);
-                color: $white_colour;
+                background:transparent;
+                color: $font_colour_1;
                 padding: 15px 0;
                 border: 1px solid transparent;
                 &.active{
-                    background: transparent;
-                    color: $font_colour_1;
+                    color: $font_colour_3;
                 }
               }
             }
