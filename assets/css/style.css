@@ -2780,6 +2780,64 @@ button:focus {
   -moz-transform: rotate(45deg) !important;
 }
 
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+  width: 25%;
+  margin-right: 40px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li {
+  width: 49%;
+  margin-bottom: 20px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box {
+  text-align: center;
+  padding: 15px 10px;
+  border: 1px solid #224958;
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .box_icon {
+  margin-bottom: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .box_icon img {
+  max-width: 30px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .box_titel {
+  margin-bottom: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .box_titel span {
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: #224958;
+  font-weight: 500;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .offfer_price span {
+  font-size: 22px;
+  color: #14df79;
+  line-height: 1;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .offer_btn {
+  margin-top: 10px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ad_ons_box .offer_btn .default_btn {
+  width: 100%;
+  font-size: 14px;
+}
+
+.rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ma_r {
+  margin-right: 5px;
+}
+
 .rms_measurment_area .rms_measurment_box .service_book_btn {
   margin-top: 60px;
 }
@@ -2851,6 +2909,10 @@ button:focus {
 
 .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .pop_img {
   width: 45%;
+}
+
+.rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .default_btn {
+  font-size: 15px;
 }
 
 .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul {

@@ -2484,6 +2484,58 @@ outline:0;
                     }
                 }
             }
+            .addons_btn_group{
+                width: 25%;
+                margin-right: 40px;
+                ul{
+                    li{
+                        width: 49%;
+                        margin-bottom: 20px;
+                        .ad_ons_box{
+                            text-align: center;
+                            padding:15px 10px;
+                            border: 1px solid $font_colour_1;
+                            border-radius: 3%;
+                            -webkit-border-radius: 3%;
+                            -moz-border-radius: 3%;
+                            .box_icon{
+                                margin-bottom: 10px;
+                                img{
+                                    max-width: 30px;
+                                }
+                            }
+                            .box_titel{
+                                margin-bottom: 10px;
+                                span{
+                                    font-size: 14px;
+                                    line-height: 1.4;
+                                    text-transform: capitalize;
+                                    color: $font_colour_1;
+                                    font-weight: 500;
+                                }
+                            }
+                            .offfer_price{
+                                span{
+                                    font-size: 22px;
+                                    color: $font_colour_3;
+                                    line-height: 1;
+                                }
+                            }
+                            .offer_btn{
+                                margin-top: 10px;
+                                .default_btn{
+                                    width: 100%;
+                                    font-size: 14px;
+                                }
+            
+                            }
+                        }
+                        .ma_r{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
         }
         .service_book_btn{
             margin-top: 60px;
@@ -2555,6 +2607,9 @@ outline:0;
             .hdr_photo_btn{
                 .pop_img{
                     width: 45%;
+                }
+                .default_btn{
+                    font-size: 15px;
                 }
                 ul{
                     text-align: center;

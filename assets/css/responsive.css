@@ -78,7 +78,7 @@
     margin-bottom: 30px;
   }
   .rms_measurment_area .more_information_box .more_informaion_right .info_btns .btn {
-    width: 100%;
+    width: 80%;
     margin: 0 auto 15px;
     font-size: 16px;
   }
@@ -143,6 +143,14 @@
   }
   .testimonial_area .testimonial_content_wrp .owl-dots {
     width: 100%;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .default_btn {
+    font-size: 13px;
   }
 }
 
@@ -280,6 +288,23 @@
   .testimonial_area .testimonial_content_wrp .owl-dots {
     width: 100%;
   }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box.res_ofer_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li {
+    width: 32.8%;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li {
+    margin-bottom: 14px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -393,6 +418,23 @@
   .payment_proceedure_area #boking_step_2 .payment_confirmation .lock_pw .lock_icon {
     top: 41%;
   }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box.res_ofer_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li {
+    width: 32.8%;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .default_btn {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -424,6 +466,36 @@
   }
   .payment_proceedure_area #checkout-progress .progress-bar .step .fa-check {
     right: 40%;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box.res_ofer_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group {
+    text-align: center;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li {
+    width: 15%;
+    margin-right: 4px;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li:last-child {
+    margin-right: 0;
+  }
+  .rms_measurment_area .rms_measurment_box .product_offer_box .addons_btn_group ul li .ma_r {
+    margin-right: 0px;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn .default_btn {
+    font-size: 16px;
+  }
+  .rms_measurment_area .more_information_box .more_informaion_right .hdr_photo_btn ul li {
+    margin-bottom: 14px;
   }
 }
 
